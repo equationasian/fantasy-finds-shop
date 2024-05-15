@@ -1,0 +1,29 @@
+<div class="login-container">
+    <div *ngIf="authenticated === false" class="error-container">
+        <mat-icon color="warn">cancel</mat-icon>
+        <span class="error-message">{{ errorMessage }}</span>
+    </div>
+    <form method="post" (ngSubmit)="onSubmit()" #loginForm="ngForm" class="login-form">
+        <mat-card class="login-card">
+            <mat-card-header>
+                <h1 class="login-header">Login</h1>
+            </mat-card-header>
+            <mat-card-content class="login-fields-container">
+                <mat-form-field class="login-field">
+                    <mat-label>Email</mat-label>
+                    <input matInput name="email" required autocomplete="off" [(ngModel)]="user.email">
+                </mat-form-field>
+                <mat-form-field class="login-field">
+                    <mat-label>Password</mat-label>
+                    <input matInput name="password" type="password" [(ngModel)]="user.password" required>
+                </mat-form-field>
+            </mat-card-content>
+            <mat-card-actions class="login-btn">
+                <button mat-flat-button color="primary" type="submit">Login</button>
+            </mat-card-actions>
+            <mat-card-footer>
+                <span>Not registered? <a routerLink="/signup">Create an account</a></span>
+            </mat-card-footer>
+        </mat-card>
+    </form>
+</div>

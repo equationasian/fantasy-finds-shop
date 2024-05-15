@@ -1,0 +1,12 @@
+<div *ngIf="inventory.length === 0; else inventoryGrid" class="empty-inventory">
+    <img id="empty-inventory-img" src="assets/images/thinking.png">
+    <h2 id="empty-inventory-header">No items were found</h2>
+    <a id="empty-inventory-link" href="https://www.flaticon.com/free-stickers/empty" title="empty stickers">Empty stickers created by DinosoftLabs - Flaticon</a>
+</div>
+<ng-template #inventoryGrid>
+    <div class="item-grid">
+        <ng-container *ngFor="let item of inventory">
+            <app-inventory-card [item]="item"></app-inventory-card>
+        </ng-container>
+    </div>
+</ng-template>

@@ -1,0 +1,56 @@
+#header {
+    color: grey;
+}
+
+#sidenav-container {
+    height: calc(100% - 60px);
+}
+
+.sidenav-content {
+    padding: 15px;
+}
+
+.sidenav {
+    width: 200px;
+}
+
+.checkbox-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.checkbox-header {
+    font-weight: 500;
+    margin: 5px 10px;
+}
+
+.item-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+
+.empty-inventory {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 60px);
+}
+
+#empty-inventory-link {
+    text-decoration: none;
+    color: lightgray;
+    font-size: 10px;
+}
+
+#empty-inventory-header {
+    color: grey;
+    margin-top: 10px;
+}
+
+#empty-inventory-img {
+    height: 200px;
+    width: auto;
+}

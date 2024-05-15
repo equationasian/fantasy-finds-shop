@@ -1,0 +1,22 @@
+<mat-sidenav-container id="sidenav-container">
+    <mat-sidenav mode="side" opened class="sidenav">
+        <form class="checkbox-form">
+            <p class="checkbox-header">Types</p>
+            <mat-checkbox #armorCheckbox color="primary" name="tags" value="armor" (change)="onTagsChange(armorCheckbox)">Armor</mat-checkbox>
+            <mat-checkbox #robeCheckbox color="primary" name="tags" value="robe" (change)="onTagsChange(robeCheckbox)">Robe</mat-checkbox>
+        </form>
+        <form class="checkbox-form">
+            <p class="checkbox-header">Series</p>
+            <mat-radio-group>
+                <mat-radio-button color="primary" value="Berserk">Berserk</mat-radio-button>
+                <mat-radio-button color="primary" value="Dorohedoro">Dorohedoro</mat-radio-button>
+                <mat-radio-button color="primary" value="Delicious in Dungeon">Delicious in Dungeon</mat-radio-button>
+                <mat-radio-button color="primary" value="Elden Ring">Elden Ring</mat-radio-button>
+            </mat-radio-group>
+        </form>
+    </mat-sidenav>
+    <mat-sidenav-content class="sidenav-content">
+        <h1 id="header">CLOTHING</h1>
+        <app-inventory-grid [inventory]="inventory"></app-inventory-grid>
+    </mat-sidenav-content>
+</mat-sidenav-container>

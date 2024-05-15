@@ -1,0 +1,28 @@
+.navbar-container {
+    width: 100vw;
+}
+
+.navbar {
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo {
+    height: 35px;
+    width: auto;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: auto;
+    padding: 10px;
+}
+
+#shopping-cart-btn {
+    margin-right: 10px;
+}

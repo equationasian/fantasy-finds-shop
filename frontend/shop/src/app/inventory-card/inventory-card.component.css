@@ -1,0 +1,24 @@
+.item-card {
+    width: 400px;
+}
+
+.item-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.item-name {
+    font-size: 18px;
+}
+
+.item-origin {
+    color: grey;
+}
+
+.item-price {
+    font-weight: 500;
+    font-size: 22px;
+}
